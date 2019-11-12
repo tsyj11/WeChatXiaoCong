@@ -13,6 +13,7 @@
 
 #ifndef _VSARDUINO_H_
 #define _VSARDUINO_H_
+#define _VMDEBUG 1
 #define __ets__
 #define ICACHE_FLASH
 #define F_CPU 80000000L
@@ -88,6 +89,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <pins_arduino.h> 
 #undef cli
 #define cli()
-#include "WeChatXiaoCong.ino"
+#include "edp8266_demo.ino"
 #endif
 #endif

@@ -88,10 +88,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\WeChatXiaoCong;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\tinyexpr;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WiFi\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Wire;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\ArduinoJson\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266mDNS;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266HTTPClient\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESPAsyncUDP\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Ticker;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Hash\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\RTClib;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\EEPROM;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\AsyncMqttClient\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESPAsyncTCP\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WebServer\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266HTTPUpdateServer\src;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\I2Cdev;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\OneWire;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\ProtoThreadsForArduino;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\arduino-crypto;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Arduino-Modbus-RTU-Slave;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\MultiButton;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\libraries\Arduino-DS3231;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\espsoftwareserial;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\libb64;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\spiffs;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\umm_malloc;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\variants\nodemcu;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\include;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\lwip\include;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\libc\xtensa-lx106-elf\include;$(ProjectDir)..\..\..\studysoftware\arduino-1.8.4\hardware\esp8266com;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.WeChatXiaoCong.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_VMDEBUG=1;__ets__;ICACHE_FLASH;F_CPU=80000000L;LWIP_OPEN_SRC;ARDUINO=10804;ARDUINO_ESP8266_NODEMCU;ESP8266;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -140,6 +140,7 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="__vm\.edp8266_demo.vsarduino.h" />
+    <ClInclude Include="__vm\.WeChatXiaoCong.vsarduino.h" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
@@ -147,4 +148,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties config.Debug.customdebug_esp8266com_nodemcuv2_debugger_type="universal" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
