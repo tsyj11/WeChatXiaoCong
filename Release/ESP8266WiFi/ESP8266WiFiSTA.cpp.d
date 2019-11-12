@@ -1,4 +1,4 @@
-C:\Users\SLT\AppData\Local\Temp\VMBuilds\WeChatXiaoCong\esp8266com_nodemcuv2\Release\ESP8266WiFi\ESP8266WiFiSTA.cpp.o: \
+C:\Users\SLT\AppData\Local\Temp\VMBuilds\edp8266_demo\esp8266com_nodemcuv2\Release\ESP8266WiFi\ESP8266WiFiSTA.cpp.o: \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WiFi\src\ESP8266WiFi.h \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \

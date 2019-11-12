@@ -19,22 +19,28 @@ int threadRs485_entry(struct pt *pt)
     {
       PT_TIMER_DELAY(pt, 200);
       int len = RS485.available();    //读取串口缓冲区数据的字节数
-      if (len = 39)                   //如果从机返回的数据长度等于39字节，则存储该数据
+      if (len < 40)                   //如果从机返回的数据长度等于39字节，则存储该数据
       {
 		 // RunningPara.device_ok = 1;
         for (int i=0; i<len; i++)
         {
           RS485A.UN2.slavePtr[i] = RS485.read();     //将串口缓冲区的数据按字节存储到slavePtr[]数组中
          }
+		Serial.println("设备返回信息：");
+		for (int i = 0; i < len; i++)
+		{
+			Serial.printf("%02x ", RS485A.UN2.slavePtr[i]);
+		}
+
        }
-      Serial.println("设备返回信息：");
+	  else { while (RS485.available()) RS485.read(); }
+      /*Serial.println("设备返回信息：");
       for (int i=0; i<len; i++)
        {
          Serial.printf("%02x ",RS485A.UN2.slavePtr[i]);
-        }  
+        } */ 
       }
-     else
-      { Serial.println("串口通讯失败!"); }
+      /*{ Serial.println("串口通讯失败!"); }*/
       Joint();
       Serial.println("\n处理后的有用数据：");
       for(int i=0;i<17;i++)

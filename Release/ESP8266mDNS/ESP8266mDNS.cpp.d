@@ -1,4 +1,4 @@
-C:\Users\SLT\AppData\Local\Temp\VMBuilds\WeChatXiaoCong\esp8266com_nodemcuv2\Release\ESP8266mDNS\ESP8266mDNS.cpp.o: \
+C:\Users\SLT\AppData\Local\Temp\VMBuilds\edp8266_demo\esp8266com_nodemcuv2\Release\ESP8266mDNS\ESP8266mDNS.cpp.o: \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266mDNS\ESP8266mDNS.cpp \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266mDNS\ESP8266mDNS.h \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \

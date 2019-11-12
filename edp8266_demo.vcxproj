@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>edp8266_demo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\edp8266_demo;D:\studysoftware\arduino-1.8.4\libraries\tinyexpr;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WiFi\src;D:\studysoftware\arduino-1.8.4\libraries\ProtoThreadsForArduino;D:\studysoftware\arduino-1.8.4\libraries\arduino-crypto;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Wire;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Arduino-Modbus-RTU-Slave;D:\studysoftware\arduino-1.8.4\libraries\ArduinoJson\src;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266mDNS;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266HTTPClient\src;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESPAsyncUDP\src;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Ticker;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Hash\src;D:\studysoftware\arduino-1.8.4\libraries\RTClib;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\EEPROM;D:\studysoftware\arduino-1.8.4\libraries\MultiButton;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\AsyncMqttClient\src;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESPAsyncTCP\src;D:\studysoftware\arduino-1.8.4\libraries\Arduino-DS3231;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\espsoftwareserial;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266WebServer\src;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\ESP8266HTTPUpdateServer\src;D:\studysoftware\arduino-1.8.4\libraries\I2Cdev;D:\studysoftware\arduino-1.8.4\libraries\OneWire;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\libb64;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\spiffs;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\cores\esp8266\umm_malloc;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\variants\nodemcu;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\include;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\lwip\include;D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\tools\sdk\libc\xtensa-lx106-elf\include;D:\studysoftware\arduino-1.8.4\hardware\esp8266com;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.edp8266_demo.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__ets__;ICACHE_FLASH;F_CPU=80000000L;LWIP_OPEN_SRC;ARDUINO=10804;ARDUINO_ESP8266_NODEMCU;ESP8266;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="edp8266_demo.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="function.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="function_v2.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="getdata.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="httpserver.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="key.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="mqtt.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="mybase64.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="periodic.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="RS485.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="__vm\.edp8266_demo.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

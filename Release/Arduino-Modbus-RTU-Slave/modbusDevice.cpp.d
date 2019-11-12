@@ -1,4 +1,4 @@
-C:\Users\SLT\AppData\Local\Temp\VMBuilds\WeChatXiaoCong\esp8266com_nodemcuv2\Release\Arduino-Modbus-RTU-Slave\modbusDevice.cpp.o: \
+C:\Users\SLT\AppData\Local\Temp\VMBuilds\edp8266_demo\esp8266com_nodemcuv2\Release\Arduino-Modbus-RTU-Slave\modbusDevice.cpp.o: \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Arduino-Modbus-RTU-Slave\modbusDevice.cpp \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266\libraries\Arduino-Modbus-RTU-Slave/modbusDevice.h \
  D:\studysoftware\arduino-1.8.4\hardware\esp8266com\Arduino-esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \
